@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="SchemaLaba1.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<CargoCars>
+
+    <CargoCar Model="BMW">
+        <Number>213</Number>
+        <Drivers>
+            <Driver>
+            <First_Name>Egor</First_Name>
+            <Second_Name>Egorov</Second_Name>
+            <DateOfStart>2002-02-01</DateOfStart>
+            </Driver>
+        </Drivers>
+    </CargoCar>
+
+    <CargoCar>
+        <Number>43276</Number>
+        <Drivers>
+            <Driver>
+            <First_Name>Egor</First_Name>
+            <Second_Name>Egorov</Second_Name>
+            <Otchestvo>Egorovich</Otchestvo>
+            <DateOfStart>2022-05-12</DateOfStart>
+            </Driver>
+        </Drivers>
+    </CargoCar>
+</CargoCars>

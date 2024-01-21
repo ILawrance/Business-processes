@@ -1,0 +1,262 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Грузовые машины API",
+    "description": "API для управления грузовыми машинами",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/cargo-cars": {
+      "post": {
+        "summary": "Создать новую грузовую машину",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CargoCar"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Машина успешно создана",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CargoCar"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "Получить все грузовые машины",
+        "responses": {
+          "200": {
+            "description": "Успешный ответ",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CargoCar"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cargo-cars/{id}": {
+      "get": {
+        "summary": "Получить информацию о грузовой машине по ID",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Идентификатор машины",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Успешный ответ",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CargoCar"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Машина не найдена"
+          }
+        }
+      },
+      "put": {
+        "summary": "Обновить информацию о грузовой машине по ID",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Идентификатор машины",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CargoCarUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Машина успешно обновлена",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CargoCar"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Машина не найдена"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Удалить грузовую машину по ID",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Идентификатор машины",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Машина успешно удалена"
+          },
+          "404": {
+            "description": "Машина не найдена"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CargoCar": {
+        "type": "object",
+        "properties": {
+          "Model": {
+            "type": "string"
+          },
+          "Number": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 999999
+          },
+          "Drivers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "First_Name": {
+                  "type": "string"
+                },
+                "Second_Name": {
+                  "type": "string"
+                },
+                "Otchestvo": {
+                  "type": "string"
+                },
+                "DateOfStart": {
+                  "type": "string",
+                  "format": "date"
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "Model",
+          "Number"
+        ],
+        "example": {
+          "Model": "BMW",
+          "Number": 90,
+          "Drivers": [
+            {
+              "First_Name": "Егор",
+              "Second_Name": "Егоров",
+              "Otchestvo": "Егорович",
+              "DateOfStart": "2022-06-01"
+            },
+            {
+              "First_Name": "Антон",
+              "Second_Name": "Антонов",
+              "Otchestvo": "Антонович",
+              "DateOfStart": "2023-01-15"
+            }
+          ]
+        }
+      },
+      "CargoCarUpdate": {
+        "type": "object",
+        "properties": {
+          "Model": {
+            "type": "string"
+          },
+          "Number": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 999999
+          },
+          "Drivers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "First_Name": {
+                  "type": "string"
+                },
+                "Second_Name": {
+                  "type": "string"
+                },
+                "Otchestvo": {
+                  "type": "string"
+                },
+                "DateOfStart": {
+                  "type": "string",
+                  "format": "date"
+                }
+              }
+            }
+          }
+        },
+        "example": {
+          "Model": "Lada",
+          "Number": 44,
+          "Drivers": [
+            {
+              "First_Name": "Егор",
+              "Second_Name": "Егоров",
+              "Otchestvo": "Егорович",
+              "DateOfStart": "2022-06-01"
+            },
+            {
+              "First_Name": "Антон",
+              "Second_Name": "Антонов",
+              "Otchestvo": "Антонович",
+              "DateOfStart": "2023-01-15"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
