@@ -1,0 +1,98 @@
+<mxfile host="app.diagrams.net" modified="2024-01-20T22:11:09.470Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ir9WNmk1S9gOZJ37ytro" version="22.1.21" type="device">
+  <diagram name="Страница — 1" id="NC_N3tPWlov2tWJ8RAa4">
+    <mxGraphModel dx="1415" dy="495" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-1" value="PC" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="40" y="30" width="240" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-2" value="Сервер базы данных" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="730" y="30" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-3" value="PC" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="40" y="230" width="240" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-4" value="Сервер приложений" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="390" y="30" width="230" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-5" value="«Interface»&lt;br&gt;&lt;b&gt;Пользовательский GUI&amp;nbsp;&lt;br&gt;клиента&lt;br&gt;&lt;/b&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="70" y="80" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-6" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" parent="sGOZygRGf22Q3syf4ZS7-5" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-7" value="«Interface»&lt;br&gt;&lt;b&gt;Пользовательский GUI&lt;br&gt;оператора&amp;nbsp;&lt;/b&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="70" y="300" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-8" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" parent="sGOZygRGf22Q3syf4ZS7-7" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-9" value="«service»&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Сервис расписания&lt;/b&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="413" y="185" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-10" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" parent="sGOZygRGf22Q3syf4ZS7-9" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-11" value="«service»&lt;br&gt;&lt;b&gt;Сервис уведомлений&lt;/b&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="413" y="295" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-12" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" parent="sGOZygRGf22Q3syf4ZS7-11" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-13" value="«service»&lt;br&gt;&lt;b&gt;Сервис анализа грузов&lt;/b&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="413" y="395" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-14" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" parent="sGOZygRGf22Q3syf4ZS7-13" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-15" value="«service»&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Сайт с информацией о деятельности организации&lt;/b&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="415" y="80" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-16" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" parent="sGOZygRGf22Q3syf4ZS7-15" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-17" value="«Database»&lt;br&gt;&lt;b&gt;База данных&lt;/b&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="750" y="110" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-18" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" parent="sGOZygRGf22Q3syf4ZS7-17" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" parent="1" source="sGOZygRGf22Q3syf4ZS7-19" target="sGOZygRGf22Q3syf4ZS7-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-19" value="Сервер базы данных. Backup" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="730" y="300" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.187;entryY=0.996;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" parent="1" source="sGOZygRGf22Q3syf4ZS7-1" target="sGOZygRGf22Q3syf4ZS7-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=305;entryDy=230;entryPerimeter=0;endArrow=none;endFill=0;" parent="1" source="sGOZygRGf22Q3syf4ZS7-3" target="sGOZygRGf22Q3syf4ZS7-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sGOZygRGf22Q3syf4ZS7-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=115;entryDy=220;entryPerimeter=0;endArrow=none;endFill=0;" parent="1" source="sGOZygRGf22Q3syf4ZS7-4" target="sGOZygRGf22Q3syf4ZS7-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="145" />
+              <mxPoint x="570" y="145" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
